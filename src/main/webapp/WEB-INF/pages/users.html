@@ -16,10 +16,9 @@
     </thead>
     <tbody>
     <tr th:each="user : ${users}">
-        <td th:text="${user.name}"></td> <!-- Use field name directly -->
-        <td th:text="${user.lastName}"></td> <!-- Use field lastName directly -->
-        <td th:text="${user.age}"></td> <!-- Use field age directly -->
-
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.lastName}"></td>
+        <td th:text="${user.age}"></td>
         <td>
             <form th:method="GET" th:action="@{${user.id}/edit}">
                 <input type="submit" value="EDIT USER"/>
