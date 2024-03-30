@@ -20,9 +20,8 @@
         <td th:text="${user.lastName}"></td>
         <td th:text="${user.age}"></td>
         <td>
-            <form th:method="GET" th:action="@{${user.id}/edit}">
-                <input type="submit" value="EDIT USER"/>
-            </form>
+            <a href="#" th:href="@{/{id}/edit(id=${user.id})}" class="btn btn-primary">Edit</a>
+
         </td>
 
         <td>
